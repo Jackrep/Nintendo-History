@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История Nintendo - Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">     
+</head>
+<body>
+    <header>
+        <img src="Images/Best placeHolder EVER!!!.png" style="width: 29px;">
+        <h1>История консолей Nintendo</h1>
+        <div class="pustota"></div>
+        <nav>
+            <a href="#autorization">Авторизация</a>
+        </nav>
+    </header>
+    <main>
+        <article class="banner">
+            <img class="logo" src="Images/Best placeHolder EVER!!!.png" alt="LOGO">
+                <h1>История консолей Nintendo</h1>
+                <p>
+                    От фаната
+                </p>
+        </article>
+        
+        <div class="razryv"></div>
+
+        <article class="select">
+            <div class="Year">
+                <img src="Images/Best placeHolder EVER!!!.png" style="width: 150px;">
+                <div>
+                    <a href="">Lorem Ipsum</a>
+                </div>
+            </div>
+
+            <div class="Year">
+                <img src="Images/Best placeHolder EVER!!!.png" style="width: 150px;">
+                <div>
+                    <a href="">Lorem Ipsum</a>
+                </div>
+            </div>
+            
+            <div class="Year">
+                <img src="Images/Best placeHolder EVER!!!.png" style="width: 150px;">
+                <div>
+                    <a href="">Lorem Ipsum</a>
+                </div>
+            </div>
+        </article>
+        
+        <div class="razryv"></div>
+
+        <article id="autorization">
+            <h1>Авторизация</h1>
+            <div class="razryvmin"></div>
+            <input class="inputC" type="text" placeholder="Логин">
+            <div class="razryvmin"></div>
+            <input class="inputC" type="password" placeholder="Пароль">
+            <div class="razryvmini"></div>
+            <button class="btn">Отправить</button>
+        </article>
+        <div class="razryvmin"></div>
+    </main>
+    <footer id="info">
+        (C) Stick team
+    </footer>
+
+    <script>
+        function handle() {
+        let inputs = document.querySelectorAll("input");
+        let input_values = [];
+        for (let i = 0; i < inputs.length; i++) {
+            input_values.push(inputs[i].value);
+        }
+        }
+        
+        let button = document.querySelector('.btn');
+        button.addEventListener('click', handle);
+    </script>
+</body>
+</html>
