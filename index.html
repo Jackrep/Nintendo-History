@@ -16,7 +16,7 @@
         <h1>История консолей Nintendo</h1>
         <div class="pustota"></div>
         <nav>
-            <a href="#autorization">Авторизация</a>
+            <a href="#autorization" class="scroll">Авторизация</a>
         </nav>
     </header>
     <main>
@@ -81,6 +81,20 @@
         
         let button = document.querySelector('.btn');
         button.addEventListener('click', handle);
+
+        
+    let links = document.querySelectorAll('.scroll');
+    let targetID;
+    links.forEach(function (element) {
+        element.addEventListener('click', function (event) {
+            event.preventDefault();
+            targetID = element.getAttribute('href');
+            document.querySelector(targetID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    });
     </script>
 </body>
 </html>
