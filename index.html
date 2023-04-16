@@ -7,12 +7,19 @@
     <title>История Nintendo - Главная</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">     
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="ICON/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="ICON/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ICON/favicon-16x16.png">
+    <link rel="manifest" href="ICON/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>   
 </head>
 <body>
     <header>
-        <img class="logohead" src="Images/Best placeHolder EVER!!!.png" style="width: 50px;">
+        <img class="logohead" src="Images/favicon.png" style="width: 40px;">
         <h1>История консолей Nintendo</h1>
         <div class="pustota"></div>
         <nav>
@@ -21,7 +28,7 @@
     </header>
     <main>
         <article class="banner">
-            <img class="logo" src="Images/Best placeHolder EVER!!!.png" alt="LOGO">
+            <img class="logo" src="ICON/android-chrome-512x512.png" alt="LOGO" style="width: 350px;">
                 <h1>История консолей Nintendo</h1>
                 <p>
                     От фаната
@@ -32,23 +39,24 @@
 
         <article class="select">
             <div class="Year">
-                <img src="Images/Best placeHolder EVER!!!.png" style="width: 150px;">
+                <img src="Images/Select/PNG/Начало.png">
+
                 <div>
-                    <a href="">Lorem Ipsum</a>
+                    <a href="Начало/indexStart.html">Начало консольного бизнеса</a>
                 </div>
             </div>
 
             <div class="Year">
-                <img src="Images/Best placeHolder EVER!!!.png" style="width: 150px;">
+                <img src="Images/Best placeHolder EVER!!!.png">
                 <div>
-                    <a href="">Lorem Ipsum</a>
+                    <a href="">Lorem ipsum dolor sit amet.</a>
                 </div>
             </div>
             
             <div class="Year">
-                <img src="Images/Best placeHolder EVER!!!.png" style="width: 150px;">
+                <img src="Images/Best placeHolder EVER!!!.png">
                 <div>
-                    <a href="">Lorem Ipsum</a>
+                    <a href="">Lorem ipsum dolor sit amet.</a>
                 </div>
             </div>
         </article>
@@ -95,6 +103,23 @@
             })
         })
     });
+
+    
+
+        document.addEventListener("DOMContentLoaded", function(event) { 
+        /*ПОЛУЧАЕТ ТЕКУЩУЮ ШИРИНУ ЭКРАНА*/
+        var widthWind = document.querySelector('body').offsetWidth;
+        if (widthWind <= 750) {
+             /*КОД КОТОРЫЙ ДОЛЖЕН ВЫПОЛНЯТЬСЯ*/
+                $(document).ready(function () {
+                $('.select').bxSlider({
+                    pagerCustom: '.slider-nav',
+                    infiniteLoop: true,
+                    hideControlOnEnd: true,
+                });
+            }); 
+        }
+});
     </script>
 </body>
 </html>
