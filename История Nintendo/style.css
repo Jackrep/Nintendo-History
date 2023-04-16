@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFB800;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    padding: 10px 5%;
+    background-color:white;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header>*{
+    display: inline-block;
+    width:450px;
+}
+
+.pustota{
+    width:10%;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    margin:0 10px;
+}
+
+.banner{
+    background-image: url(images/BG.png);
+    padding: 20% 5%;
+    color: white;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.select {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Year {
+    display: flex;
+    background-color: white;
+    border: white 30px solid;
+    border-radius: 10%;
+    flex-direction: column;
+}
+
+.razryv{
+    height: 100px;
+}
+
+div a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+}
+
+footer{
+    background-color:black;
+    padding:10px 0;
+    text-align: center;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.razryvmin{
+    height: 30px;
+}
+
+.razryvmini{
+    height: 15px;
+}
+
+#autorization {
+    text-align: center;
+}
+
+.inputC {
+    padding:10px;
+    border-radius:10px;
+    border:0;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.30);
+}
+
+.btn {
+    padding:10px;
+    border-radius:10px;
+    border:0;
+    background-color: #ffb700;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.30);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover {
+    padding:10px;
+    border-radius:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.60);
+}
+
+.inputC:hover {
+    padding:10px;
+    border-radius:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.80);
+}
+
+@media(max-width: 800px){
+    img{
+        width: 250px;
+    }
+
+    header{
+        display: flex;
+        padding: 10px 5%;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .select {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Year {
+        background-color: white;
+        border: white 30px solid;
+        border-radius: 10%;
+        margin-top: 75px;
+    }
+}
+
+.bx-wrapper {
+    width: 775px;
+}
+
+.slider-nav > div {
+    float: left;
+    border: 3px solid #fff;
+}
+
+.slider-nav > div a {
+    display: block;
+    cursor: pointer;
+}
+
+.slider-nav > div a.active {
+    border-bottom: 3px solid #000;
+}
